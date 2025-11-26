@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>La K-Influencia</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand" aria-label="logo"><div class="logo-dot"></div></div>
+
+        
+        <nav aria-label="Menú principal del sitio">
+          <ul class="pill-nav">
+            <li>
+              <a href="/" class="pill active" title="Ir al inicio del sitio"
+                >Inicio</a
+              >
+            </li>
+            <li class="has-dropdown">
+              <button
+                class="pill dropdown-toggle"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Tendencias
+              </button>
+
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-link">K-dramas</a></li>
+                <li><a href="#" class="dropdown-link">Comebacks de K-pop</a></li>
+                <li><a href="#" class="dropdown-link">Moda & styling</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a
+                href="/analisis"
+                class="pill"
+                title="Leer análisis detallados y opiniones"
+                >Análisis</a
+              >
+            </li>
+            <li>
+              <a
+                href="sobre-nosotros.html"
+                class="pill"
+                title="Conoce más sobre nuestro equipo"
+                >Sobre nosotros</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-dots" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <h1 class="hero-title">
+            <span>LA K-</span><br />
+            <span>INFLUENCIA</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p id="welcome-message" class="welcome-message"></p>
+
+
+          <!-- tira de tarjetas -->
+          <div class="card-strip">
+            <figure class="card tilt-1">
+              <img
+                src="images/rectangle-18-11.png"
+                alt="Jennie de Blackpink con outfit denim"
+                title="Ver más sobre Blackpink"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="card tilt-2">
+              <img
+                src="images/rectangle-17-15.png"
+                alt="Rosé de Blackpink con top rojo"
+                title="Ver más sobre Rosé de Blackpink"
+                loading="lazy"
+              />
+            </figure>
+            <figure
+              class="card card--empty tilt-0"
+              aria-label="placeholder"
+            ></figure>
+            <figure class="card tilt-3">
+              <img
+                src="images/rectangle-20-19.png"
+                alt="Logo de la tienda Temu"
+                title="Explora Temu"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="card tilt-4">
+              <img
+                src="images/rectangle-19-25.png"
+                alt="Personaje de Squid Game con traje rosa"
+                title="Ver detalles de Squid Game"
+                loading="lazy"
+              />
+            </figure>
+
+            <!-- botón play -->
+            <button class="play-btn" aria-label="Reproducir">
+              <span class="triangle" aria-hidden="true"></span>
+            </button>
+          </div>
+
+          <!-- ola morada -->
+          <img
+            src="images/vector-1-6.svg"
+            class="wave"
+            alt=""
+            aria-hidden="true"
+          />
+        </div>
+      </section>
+      
+      <!-- SLIDER DE IMÁGENES -->
+      <section class="slider-section">
+        <div class="container">
+          <h2 class="slider-title">Momentos destacados</h2>
+
+          <div class="slider-wrapper">
+            <!-- Botón anterior -->
+            <button class="slider-btn slider-prev" aria-label="Ver imagen anterior">
+              &#10094;
+            </button>
+
+            <!-- Pista donde van las diapositivas -->
+            <div class="slider-track">
+              <figure class="slide active">
+                <img src="images/rectangle-18-11.png" alt="Influencer K-pop 1">
+                <figcaption>Influencers y estilos que marcan tendencia.</figcaption>
+              </figure>
+
+              <figure class="slide">
+                <img src="images/rectangle-17-15.png" alt="Influencer K-pop 2">
+                <figcaption>Escenarios y comebacks inolvidables.</figcaption>
+              </figure>
+
+              <figure class="slide">
+                <img src="images/rectangle-19-25.png" alt="Influencer K-pop 3">
+                <figcaption>Series y universos que conectan con el fandom.</figcaption>
+              </figure>
+            </div>
+
+            <!-- Botón siguiente -->
+            <button class="slider-btn slider-next" aria-label="Ver imagen siguiente">
+              &#10095;
+            </button>
+          </div>
+
+          <!-- Puntos de navegación -->
+          <div class="slider-dots">
+            <span class="dot-dot active" data-index="0"></span>
+            <span class="dot-dot" data-index="1"></span>
+            <span class="dot-dot" data-index="2"></span>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+    </main>
+
+      <script src="script.js"></script>
+
+  </body>
+</html>
